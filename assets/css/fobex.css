@@ -553,6 +553,10 @@ ul {
   width: 100%;
 }
 
+.main-header-top-gap{
+  margin-top: 6.1rem;
+}
+
 .main-menu {
   position: relative;
   display: block;
