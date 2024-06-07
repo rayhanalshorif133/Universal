@@ -542,13 +542,15 @@ ul {
 --------------------------------------------------------------*/
 .main-header {
   background: transparent;
-  position: absolute;
   left: 0px;
   top: 0px;
   right: 0;
   width: 100%;
   transition: all 500ms ease;
   z-index: 999;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .main-menu {
@@ -1355,6 +1357,7 @@ ul {
   width: 100%;
   transition: all 500ms ease;
   z-index: 999;
+  
 }
 
 .main-header-two__top {
