@@ -24,11 +24,12 @@
         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
         rel="stylesheet">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
     <link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/vendors/animate/animate.min.css" />
     <link rel="stylesheet" href="./assets/vendors/animate/custom-animate.css" />
-    <link rel="stylesheet" href="./assets/vendors/fontawesome/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="./assets/vendors/fontawesome/css/all.min.css" /> -->
     <link rel="stylesheet" href="./assets/vendors/jarallax/jarallax.css" />
     <link rel="stylesheet" href="./assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
     <link rel="stylesheet" href="./assets/vendors/odometer/odometer.min.css" />
@@ -41,6 +42,7 @@
 
     <!-- template styles -->
     <link rel="stylesheet" href="./assets/css/fobex.css" />
+    <link rel="stylesheet" href="./assets/css/custom.css" />
     <link rel="stylesheet" href="./assets/css/fobex-responsive.css" />
 </head>
 
@@ -159,10 +161,16 @@
         </header>
 
         <div class="main-header-top-gap"></div>
-        <div class="owl-carousel" style="height: auto;">
-            <div> <img src="./assets/images/slider/1.png"> </div>
-            <div> <img src="./assets/images/slider/1.png"> </div>
-            <div> <img src="./assets/images/slider/1.png"> </div>
+        <div class="position-relative">
+            <div class="owl-carousel" style="height: auto;">
+                <div> <img src="./assets/images/slider/1.png"> </div>
+                <div> <img src="./assets/images/slider/1.png"> </div>
+                <div> <img src="./assets/images/slider/1.png"> </div>
+            </div>
+            <div class="slider-btn-container">
+                <div class="left-slider-btn"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="right-slider-btn"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
         </div>
         <!-- /.stricky-header -->
 
@@ -1208,7 +1216,7 @@
                 "loop": true,
                 "autoplay": true,
                 "margin": 30,
-                "nav": true,
+                "nav": false,
                 "dots": false,
                 "smartSpeed": 500,
                 "autoplayTimeout": 10000,

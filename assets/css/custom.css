@@ -1,0 +1,71 @@
+.slider-btn-container {
+    position: absolute;
+    z-index: 999;
+    top: 40%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.slider-btn-container .right-slider-btn,
+.slider-btn-container .left-slider-btn {
+    background: #646E73;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-btn-container .right-slider-btn i,
+.slider-btn-container .left-slider-btn i {
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* media tag devices:start */
+/*  320px — 480px: Mobile devices */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    .slider-btn-container{
+        top: 14%;
+    }
+
+    .slider-btn-container .right-slider-btn,
+    .slider-btn-container .left-slider-btn {
+        height: 25px;
+        width: 25px;
+        margin: 25px;
+    }
+
+    .slider-btn-container .right-slider-btn i,
+    .slider-btn-container .left-slider-btn i {
+        font-size: 14px;
+    }
+
+
+}
+
+/* 481px — 768px: iPads, Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {}
+
+/* 768px iPads, Tablets */
+@media only screen and (min-width: 768px) {}
+
+/* 769px — 1024px: Small screens, laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {}
+
+/* 1025px — 1200px: Desktops, large screens */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {}
+
+/* 1201px and more —  Extra large screens, TV */
+@media screen and (min-width: 1201px) {}
+
+/* media tag devices:end */
