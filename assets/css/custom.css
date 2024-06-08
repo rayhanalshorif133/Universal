@@ -30,6 +30,41 @@
     align-items: center;
 }
 
+.slider{
+    position: relative;
+    
+}
+.slider-btn{
+    position: absolute;
+    bottom: 18%;
+    z-index: 999;
+    display: flex;
+    left: 10%;
+    height: auto;    
+}
+
+.slider-btn a{
+    box-shadow: 6px 10px 24px 0px #cfcfcf;
+    display: block;
+    width: auto;
+    cursor: pointer;
+    padding: 14px 35px;
+}
+
+.slider-btn a:nth-child(1){
+    background: #ffffff;
+    background: #ffffff;
+    border-radius: 25px;
+    margin-right: 10px;
+    color: #3764EB;
+}
+
+.slider-btn a:nth-child(2){
+    background-color: #3764EB;
+    color: #fff;
+    border-radius: 25px;
+}
+
 /* media tag devices:start */
 /*  320px — 480px: Mobile devices */
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -50,22 +85,80 @@
         font-size: 14px;
     }
 
+    
+    .slider-btn{
+        bottom: 10%;
+        left: 15%;
+    }
+    .slider-btn a{
+        padding: 2px 7px;
+        font-size: 10px;
+    }
+
 
 }
 
 /* 481px — 768px: iPads, Tablets */
-@media screen and (min-width: 481px) and (max-width: 768px) {}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    
+    .slider-btn-container .right-slider-btn,
+    .slider-btn-container .left-slider-btn {
+        height: 25px;
+        width: 25px;
+        margin: 25px;
+    }
+
+    .slider-btn-container .right-slider-btn i,
+    .slider-btn-container .left-slider-btn i {
+        font-size: 14px;
+    }
+    .slider-btn-container{
+        top: 25%;
+    }
+    .slider-btn{
+        bottom: 10%;
+        left: 15%;
+    }
+    .slider-btn a{
+        padding: 2px 10px;
+        font-size: 12px;
+    }
+}
 
 /* 768px iPads, Tablets */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    .slider-btn{
+        bottom: 8%;
+        left: 10%;
+    }
+    .slider-btn a{
+        padding: 5px 15px;
+    }
+}
 
 /* 769px — 1024px: Small screens, laptops */
-@media screen and (min-width: 769px) and (max-width: 1024px) {}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .slider-btn{
+        bottom: 8%;
+        left: 10%;
+    }
+    .slider-btn a{
+        padding: 5px 15px;
+    }
+}
 
 /* 1025px — 1200px: Desktops, large screens */
 @media screen and (min-width: 1025px) and (max-width: 1200px) {}
 
 /* 1201px and more —  Extra large screens, TV */
-@media screen and (min-width: 1201px) {}
+@media screen and (min-width: 1201px) {
+    .slider-btn{
+        bottom: 18%;
+        left: 10%;
+    }
+    .slider-btn a{
+        padding: 14px 35px;
+    }
+}
 
 /* media tag devices:end */
