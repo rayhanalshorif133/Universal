@@ -208,7 +208,19 @@
                     <div class="section-title__tagline-box">
                         <p class="section-title__tagline">dedicated member</p>
                     </div>
-                    <h2 class="section-title__title">Expert consulting team</h2>
+                    <div class="d-flex justify-content-between">
+                        <h2 class="section-title__title">Expert consulting team</h2>
+                        <div class="d-flex team-slider-btn">
+                            <div class="team-left-btn">
+                                <i class="fa-solid fa-arrow-left-long"></i>
+                            </div>
+                            <div class="team-right-btn">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
                 </div>
                 <div class="team-two__bottom">
                     <div class="owl-carousel team-slider">
@@ -865,7 +877,7 @@
             });
 
 
-            $(".team-slider").owlCarousel({
+           const teamSlider =  $(".team-slider").owlCarousel({
                 "loop": true,
                 "autoplay": true,
                 "margin": 30,
@@ -887,6 +899,14 @@
                         "items": 3.666666
                     }
                 }
+            });
+
+            $(document).on('click', '.team-left-btn', function(){
+                teamSlider.trigger('prev.owl.carousel');
+            });
+            
+            $(document).on('click', '.team-right-btn', function(){
+                teamSlider.trigger('next.owl.carousel');
             });
         });
     </script>

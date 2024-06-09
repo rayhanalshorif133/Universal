@@ -65,6 +65,35 @@
     border-radius: 25px;
 }
 
+.team-slider-btn div{
+    height: 52px;
+    width: 80px;
+    line-height: 52px;
+    border-radius: 26px;
+    border: 1px solid #196164;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.team-slider-btn div:hover{
+    cursor: pointer;
+    background: #196164;
+    color: #fff;
+}
+
+
+
+
+
+.team-slider-btn div i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 /* media tag devices:start */
 /*  320px — 480px: Mobile devices */
 @media screen and (min-width: 320px) and (max-width: 480px) {
