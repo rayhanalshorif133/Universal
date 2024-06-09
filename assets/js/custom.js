@@ -110,32 +110,37 @@ const handleOwlCarousel = () => {
 
 const commercialCleaningHandle = () => {
 
-    var counter = 0;
 
-    var lastScrollTop = 0; // Variable to store the last scroll position
 
     $(document).on('scroll', function (e) {
 
         var topBar = $(this).scrollTop(); // Get the current scroll position
         topBar > 2806 ? topBar -= 2806 : topBar = 0;
-        
-        if(topBar < 2136){
+
+        if (topBar > 0) {
+            console.log(topBar)
             var setHeight = topBar + 'px';
             $(".side-line-green").css('height', setHeight);
+
+            var count = $('.side-line-green').data('count');
+            for (let index = 0; index < count; index++) {
+                const ID = `item-${index}`;
+                var divElement = document.getElementById(ID);
+                var boundingRect = divElement.getBoundingClientRect();
+                if(boundingRect.top < 464){
+                    $(`#item-${index}`).css('background-color', '#196164');
+                    $(`#item-${index} i`).css('color', '#fff');
+                }else{
+                    $(`#item-${index}`).css('background-color', '#EEEEEE');
+                    $(`#item-${index} i`).css('color', '#196164');
+                }
+                
+            }
+
+            
+
         }
 
-       
-    });
 
-    console.log('hello')
-    // get screen size
-    const screenHeight = window.innerHeight;
-    const middleOfHeight = screenHeight / 2;
-    // $(".side-line")
-    console.log(middleOfHeight)
-    var offset = $(".side-line").offset();
-    var main_header = $(".main-header").offset();
-    var heightFromTop = offset.top;
-    var main_header_top = main_header.top;
-    console.log(heightFromTop, main_header_top)
+    });
 };
