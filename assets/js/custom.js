@@ -128,11 +128,11 @@ const commercialCleaningHandle = () => {
                 var divElement = document.getElementById(ID);
                 var boundingRect = divElement.getBoundingClientRect();
                 if(boundingRect.top < 464){
-                    $(`#item-${index}`).css('background-color', '#196164');
+                    $(`#item-${index}`).css('background-color', '#376494');
                     $(`#item-${index} i`).css('color', '#fff');
                 }else{
                     $(`#item-${index}`).css('background-color', '#EEEEEE');
-                    $(`#item-${index} i`).css('color', '#196164');
+                    $(`#item-${index} i`).css('color', '#376494');
                 }
                 
             }
