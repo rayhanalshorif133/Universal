@@ -8780,7 +8780,7 @@ ul {
 .team-two__bottom {
   position: relative;
   display: block;
-  margin-right: -300px;
+  /* margin-right: -300px; */
   padding-top: 50px;
   border-top: 1px solid var(--fobex-bdr-color);
 }
