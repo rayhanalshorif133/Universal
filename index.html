@@ -805,7 +805,7 @@
     <script src="./assets/js/fobex.js"></script>
     <script>
         $(document).ready(function () {
-            $(".main-slider").owlCarousel({
+           const mainSlider =  $(".main-slider").owlCarousel({
                 "loop": true,
                 "autoplay": true,
                 "margin": 30,
@@ -828,6 +828,19 @@
                     }
                 }
             });
+
+            $(document).on("click", ".left-slider-btn", function (e) {
+                mainSlider.trigger('prev.owl.carousel');
+            }); 
+            
+            $(document).on("click", ".right-slider-btn", function (e) {
+                mainSlider.trigger('next.owl.carousel');
+            });
+
+            // <div class="left-slider-btn"><i class="fa-solid fa-angle-left"></i></div>
+            // <div class="right-slider-btn"><i class="fa-solid fa-angle-right"></i></div>
+
+
 
             $(".service-slider").owlCarousel({
                 "loop": true,
