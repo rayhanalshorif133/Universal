@@ -32,20 +32,21 @@
     align-items: center;
 }
 
-.slider{
+.slider {
     position: relative;
-    
+
 }
-.slider-btn{
+
+.slider-btn {
     position: absolute;
     bottom: 18%;
     z-index: 999;
     display: flex;
     left: 10%;
-    height: auto;    
+    height: auto;
 }
 
-.slider-btn a{
+.slider-btn a {
     box-shadow: 6px 10px 24px 0px #cfcfcf;
     display: block;
     width: auto;
@@ -53,7 +54,7 @@
     padding: 14px 35px;
 }
 
-.slider-btn a:nth-child(1){
+.slider-btn a:nth-child(1) {
     background: #ffffff;
     background: #ffffff;
     border-radius: 25px;
@@ -61,13 +62,13 @@
     color: #3764EB;
 }
 
-.slider-btn a:nth-child(2){
+.slider-btn a:nth-child(2) {
     background-color: #3764EB;
     color: #fff;
     border-radius: 25px;
 }
 
-.team-slider-btn div{
+.team-slider-btn div {
     height: 52px;
     width: 80px;
     line-height: 52px;
@@ -79,7 +80,7 @@
     margin: 0 10px;
 }
 
-.team-slider-btn div:hover{
+.team-slider-btn div:hover {
     cursor: pointer;
     background: #196164;
     color: #fff;
@@ -89,7 +90,7 @@
 
 
 
-.team-slider-btn div i{
+.team-slider-btn div i {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,7 +98,7 @@
 }
 
 
-.services-btn-container{
+.services-btn-container {
     position: absolute;
     z-index: 999;
     top: 50%;
@@ -131,11 +132,73 @@
     align-items: center;
 }
 
+.h-auto {
+    height: auto;
+}
+
+
+
+.commercial_cleaning_left {}
+
+.commercial_cleaning_left .title {
+    font-size: 22px !important;
+}
+
+.commercial_cleaning_left h2 {
+    font-size: 18px !important;
+}
+
+.h-full{
+    height: 100%;
+}
+
+.side-line {
+    width: 4px;
+    height: 100%;
+    background: #EEEEEE;
+    top: 30px;
+    left: -73px;
+}
+
+.mt-5rem {
+    margin-top: 5rem;
+}
+
+.side-line-green{
+    background: #5CB85C;
+    width: 4px;
+    height: 0px;
+    top: 30px;
+    left: -73px;
+}
+
+.commercial_cleaning_left .checkbox {
+    height: 3rem !important;
+    width: 3rem !important;
+    border-radius: 50%;
+    background: #EEEEEE;
+    position: absolute;
+    top: 0px;
+    left: -95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.commercial_cleaning_left .checkbox i {
+    color: #5CB85C;
+    font-weight: bold;
+    font-size: 1.4rem!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* media tag devices:start */
 /*  320px — 480px: Mobile devices */
 @media screen and (min-width: 320px) and (max-width: 480px) {
 
-    .slider-btn-container{
+    .slider-btn-container {
         top: 14%;
     }
 
@@ -151,12 +214,13 @@
         font-size: 14px;
     }
 
-    
-    .slider-btn{
+
+    .slider-btn {
         bottom: 10%;
         left: 15%;
     }
-    .slider-btn a{
+
+    .slider-btn a {
         padding: 2px 7px;
         font-size: 10px;
     }
@@ -166,7 +230,7 @@
 
 /* 481px — 768px: iPads, Tablets */
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    
+
     .slider-btn-container .right-slider-btn,
     .slider-btn-container .left-slider-btn {
         height: 25px;
@@ -178,14 +242,17 @@
     .slider-btn-container .left-slider-btn i {
         font-size: 14px;
     }
-    .slider-btn-container{
+
+    .slider-btn-container {
         top: 25%;
     }
-    .slider-btn{
+
+    .slider-btn {
         bottom: 10%;
         left: 15%;
     }
-    .slider-btn a{
+
+    .slider-btn a {
         padding: 2px 10px;
         font-size: 12px;
     }
@@ -193,22 +260,24 @@
 
 /* 768px iPads, Tablets */
 @media only screen and (min-width: 768px) {
-    .slider-btn{
+    .slider-btn {
         bottom: 8%;
         left: 10%;
     }
-    .slider-btn a{
+
+    .slider-btn a {
         padding: 5px 15px;
     }
 }
 
 /* 769px — 1024px: Small screens, laptops */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .slider-btn{
+    .slider-btn {
         bottom: 8%;
         left: 10%;
     }
-    .slider-btn a{
+
+    .slider-btn a {
         padding: 5px 15px;
     }
 }
@@ -218,11 +287,12 @@
 
 /* 1201px and more —  Extra large screens, TV */
 @media screen and (min-width: 1201px) {
-    .slider-btn{
+    .slider-btn {
         bottom: 18%;
         left: 10%;
     }
-    .slider-btn a{
+
+    .slider-btn a {
         padding: 14px 35px;
     }
 }
