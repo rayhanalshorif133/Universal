@@ -170,7 +170,8 @@
                         <br> in happy clients
                     </h2>
                 </div>
-                <div class="services-two__bottom">
+                <div class="services-two__bottom d-flex">
+
                     <div class="owl-carousel service-slider" style="height: auto;">
                         <div class="item">
                             <div class="services-two__single">
@@ -194,8 +195,79 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="item">
+                            <div class="services-two__single">
+                                <div class="services-two__img-box">
+                                    <div class="services-two__img">
+                                        <img src="assets/images/services/services-2-2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="services-two__content">
+                                    <div class="services-two__icon">
+                                        <span class="icon-coin-stack"></span>
+                                        <div class="services-two__icon-shape"></div>
+                                    </div>
+                                    <h3 class="services-two__title"><a href="services-details.html">Business
+                                            <br> Opportunities</a></h3>
+                                    <p class="services-two__text">Parturient aliquet risus primis nons eudu tincidunt
+                                        arcu
+                                        laoree integer pellen tesque aliquet</p>
+                                    <a href="services-details.html" class="services-two__btn">service details<span
+                                            class="icon-right-arrow"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="services-two__single">
+                                <div class="services-two__img-box">
+                                    <div class="services-two__img">
+                                        <img src="assets/images/services/services-2-2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="services-two__content">
+                                    <div class="services-two__icon">
+                                        <span class="icon-coin-stack"></span>
+                                        <div class="services-two__icon-shape"></div>
+                                    </div>
+                                    <h3 class="services-two__title"><a href="services-details.html">Business
+                                            <br> Opportunities</a></h3>
+                                    <p class="services-two__text">Parturient aliquet risus primis nons eudu tincidunt
+                                        arcu
+                                        laoree integer pellen tesque aliquet</p>
+                                    <a href="services-details.html" class="services-two__btn">service details<span
+                                            class="icon-right-arrow"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="services-two__single">
+                                <div class="services-two__img-box">
+                                    <div class="services-two__img">
+                                        <img src="assets/images/services/services-2-2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="services-two__content">
+                                    <div class="services-two__icon">
+                                        <span class="icon-coin-stack"></span>
+                                        <div class="services-two__icon-shape"></div>
+                                    </div>
+                                    <h3 class="services-two__title"><a href="services-details.html">Business
+                                            <br> Opportunities</a></h3>
+                                    <p class="services-two__text">Parturient aliquet risus primis nons eudu tincidunt
+                                        arcu
+                                        laoree integer pellen tesque aliquet</p>
+                                    <a href="services-details.html" class="services-two__btn">service details<span
+                                            class="icon-right-arrow"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
-
+                    <div class="services-btn-container">
+                        <div class="left-slider-btn services-left-slider"><i class="fa-solid fa-arrow-left-long"></i></div>
+                        <div class="right-slider-btn services-right-slider"><i class="fa-solid fa-arrow-right-long"></i></div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -852,7 +924,7 @@
 
 
 
-            $(".service-slider").owlCarousel({
+           const service_slider =  $(".service-slider").owlCarousel({
                 "loop": true,
                 "autoplay": true,
                 "margin": 30,
@@ -874,6 +946,14 @@
                         "items": 2
                     }
                 }
+            });
+
+            $(document).on('click', '.services-left-slider', function(){
+                service_slider.trigger('prev.owl.carousel');
+            });
+            
+            $(document).on('click', '.services-right-slider', function(){
+                service_slider.trigger('next.owl.carousel');
             });
 
 
