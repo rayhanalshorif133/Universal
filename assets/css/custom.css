@@ -73,7 +73,7 @@
     width: 80px;
     line-height: 52px;
     border-radius: 26px;
-    border: 1px solid #196164;
+    border: 1px solid #376494;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,7 +82,7 @@
 
 .team-slider-btn div:hover {
     cursor: pointer;
-    background: #196164;
+    background: #376494;
     color: #fff;
 }
 
@@ -165,7 +165,7 @@
 }
 
 .side-line-green{
-    background: #196164;
+    background: #376494;
     width: 4px;
     height: 0px;
     top: 30px;
@@ -186,7 +186,7 @@
 }
 
 .commercial_cleaning_left .checkbox i {
-    color: #196164;
+    color: #376494;
     font-weight: bold;
     font-size: 1.4rem!important;
     display: flex;
