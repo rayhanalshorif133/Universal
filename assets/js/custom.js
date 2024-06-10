@@ -5,10 +5,27 @@ $(document).ready(function () {
 
     navBarToggler();
 
+    handleGellary();
+
+
+
 
 });
 
+
+const handleGellary = () => {
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+    })
+};
+
+
+
 const navBarToggler = () => {
+
+
+
 
     $(document).on('click', '.main-menu__toggle-menu', function (e) {
         $(".mobile-nav__wrapper").toggleClass("expanded");
@@ -66,10 +83,10 @@ const handleOwlCarousel = () => {
                 "items": 1
             },
             "768": {
-                "items": 2
+                "items": 1
             },
             "992": {
-                "items": 2
+                "items": 1
             },
             "1200": {
                 "items": 2
@@ -96,16 +113,22 @@ const handleOwlCarousel = () => {
         "autoplayTimeout": 10000,
         "responsive": {
             "0": {
+                "items": 1
+            },
+            "520": {
+                "items": 1.5
+            },
+            "600": {
                 "items": 2
             },
             "768": {
-                "items": 2
+                "items": 2.3
             },
             "992": {
                 "items": 3
             },
             "1200": {
-                "items": 3.666666
+                "items": 3.66
             }
         }
     });
@@ -133,7 +156,7 @@ const commercialCleaningHandle = () => {
             if (topBar > 2480) {
                 topBar = 2480;
             }
-            if(!SETPOINT){
+            if (!SETPOINT) {
                 var setHeight = topBar + 'px';
                 $(".side-line-green").css('height', setHeight);
             }
@@ -168,12 +191,12 @@ const commercialCleaningHandle = () => {
         checkBoxs.map(function (index, element) {
             // get has active class
             const hasActiveClass = $(element).hasClass('active');
-            hasActiveClass == true? hasActiveClassCount++ : hasActiveClassCount--;
+            hasActiveClass == true ? hasActiveClassCount++ : hasActiveClassCount--;
         });
 
-        if(count == hasActiveClassCount){
+        if (count == hasActiveClassCount) {
             SETPOINT = true;
-        }else{
+        } else {
             SETPOINT = false;
         }
 
