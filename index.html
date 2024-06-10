@@ -92,8 +92,8 @@
                             </div>
                         </div>
                         <div class="main-menu__right">
-                            <div class="main-menu__search-box">
-                                <a href="#" class="main-menu__search search-toggler icon-search-1"></a>
+                            <div class="main-menu__toggle-menu">
+                                <i class="fa-solid fa-bars"></i>
                             </div>
                             <div class="main-menu__call">
                                 <div class="main-menu__call-icon">
@@ -688,7 +688,7 @@
                                 industries and organisations.
                             </p>
                             <h2>Our range of cleaning services includes the following:</h2>
-                            <div class="mt-5 d-flex">
+                            <div class="mt-5 d-flex" style="margin-left: 6rem;">
                                 <div class="position-relative h-auto">
                                     <div class="h-full side-line position-absolute"></div>
                                     <div class="side-line-green position-absolute" data-count="11"></div>
@@ -831,7 +831,29 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            form
+                            <div class="commercial_cleaning_right">
+                                <form action="#">
+                                    <h3 class="title">Get your quote for Commercial Cleaning. Prices start from £15 per hour.</h3>
+                                    <div class="mt-4">
+                                        <input type="text" placeholder="Your Name *" class="form-control-custom">
+                                    </div>
+                                    <div class="mt-4">
+                                        <input type="text" placeholder="Company Name *" class="form-control-custom">
+                                    </div>
+                                    <div class="mt-4">
+                                        <input type="email" placeholder="Email Name *" class="form-control-custom">
+                                    </div>
+                                    <div class="mt-4">
+                                        <input type="text" placeholder="Contact Number *" class="form-control-custom">
+                                    </div>
+                                    <div class="mt-4">
+                                        <input type="text" placeholder="Post Code" class="form-control-custom">
+                                    </div>
+                                    <div class="mt-4">
+                                        <select class="form-control-custom" placeholder=""
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -985,7 +1007,6 @@
     </div>
     <!-- /.page-wrapper -->
 
-
     <div class="mobile-nav__wrapper">
         <div class="mobile-nav__overlay mobile-nav__toggler"></div>
         <!-- /.mobile-nav__overlay -->
@@ -993,11 +1014,31 @@
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
             <div class="logo-box">
-                <a href="index-2.html" aria-label="logo image"><img src="assets/images/resources/logo-1.png" width="150"
-                        alt="" /></a>
+                <a href="./index.html" aria-label="logo image">
+                    <img src="assets/images/only_logo.png" alt="">
+                </a>
+                <h3 class="mobile-nav__title">
+                    Universal Logistic
+                </h3>
             </div>
             <!-- /.logo-box -->
-            <div class="mobile-nav__container"></div>
+            <div class="mobile-nav__container"><ul class="main-menu__list">
+                                    <li class="current">
+                                        <a href="index.html">Home </a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="services.html">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="services.html">Package</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                </ul></div>
             <!-- /.mobile-nav__container -->
 
             <ul class="mobile-nav__contact list-unstyled">
@@ -1027,6 +1068,7 @@
         </div>
         <!-- /.mobile-nav__content -->
     </div>
+
     <!-- /.mobile-nav__wrapper -->
 
     <div class="search-popup">

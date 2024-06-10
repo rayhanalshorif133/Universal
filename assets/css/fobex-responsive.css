@@ -1863,7 +1863,8 @@
         padding: 0 15px;
     }
 
-    .main-menu__right {
+    .main-menu__btn-box,
+    .main-menu__call {
         display: none;
     }
 

@@ -3,8 +3,19 @@ $(document).ready(function () {
     handleOwlCarousel();
     commercialCleaningHandle();
 
+    navBarToggler();
+
 
 });
+
+const navBarToggler = () => {
+
+    $(document).on('click', '.main-menu__toggle-menu', function (e) {
+        $(".mobile-nav__wrapper").toggleClass("expanded");
+    });
+
+};
+
 
 const handleOwlCarousel = () => {
     const mainSlider = $(".main-slider").owlCarousel({
@@ -111,6 +122,7 @@ const handleOwlCarousel = () => {
 const commercialCleaningHandle = () => {
 
 
+    var SETPOINT = false;
 
     $(document).on('scroll', function (e) {
 
@@ -118,29 +130,52 @@ const commercialCleaningHandle = () => {
         topBar > 2806 ? topBar -= 2806 : topBar = 0;
 
         if (topBar > 0) {
-            console.log(topBar)
-            var setHeight = topBar + 'px';
-            $(".side-line-green").css('height', setHeight);
+            if (topBar > 2480) {
+                topBar = 2480;
+            }
+            if(!SETPOINT){
+                var setHeight = topBar + 'px';
+                $(".side-line-green").css('height', setHeight);
+            }
 
             var count = $('.side-line-green').data('count');
             for (let index = 0; index < count; index++) {
                 const ID = `item-${index}`;
                 var divElement = document.getElementById(ID);
                 var boundingRect = divElement.getBoundingClientRect();
-                if(boundingRect.top < 464){
+                if (boundingRect.top < 464) {
                     $(`#item-${index}`).css('background-color', '#376494');
                     $(`#item-${index} i`).css('color', '#fff');
-                }else{
+                    $(`#item-${index}`).addClass('active');
+                } else {
                     $(`#item-${index}`).css('background-color', '#EEEEEE');
                     $(`#item-${index} i`).css('color', '#376494');
+                    $(`#item-${index}`).removeClass('active');
                 }
-                
+
             }
 
-            
+
+
+
 
         }
 
+
+        const checkBoxs = $(".checkbox");
+        var hasActiveClassCount = 0;
+        var count = $('.side-line-green').data('count');
+        checkBoxs.map(function (index, element) {
+            // get has active class
+            const hasActiveClass = $(element).hasClass('active');
+            hasActiveClass == true? hasActiveClassCount++ : hasActiveClassCount--;
+        });
+
+        if(count == hasActiveClassCount){
+            SETPOINT = true;
+        }else{
+            SETPOINT = false;
+        }
 
     });
 };
