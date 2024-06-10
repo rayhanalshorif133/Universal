@@ -194,6 +194,37 @@
     justify-content: center;
 }
 
+
+.commercial_cleaning_right{
+    background-color: #E6F0FA;
+    padding: 3rem;
+    border-top-left-radius: 60px; 
+}
+
+.commercial_cleaning_right .title{
+    color: #4A4A88;
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: 700;
+}
+.commercial_cleaning_right  .form-control-custom {
+    display: block;
+    width: 100%;
+    padding: 12px .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
 /* media tag devices:start */
 /*  320px — 480px: Mobile devices */
 @media screen and (min-width: 320px) and (max-width: 480px) {
