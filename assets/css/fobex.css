@@ -23,11 +23,11 @@
   --fobex-gray-rgb: 92, 102, 99;
   --fobex-white: #ffffff;
   --fobex-white-rgb: 255, 255, 255;
-  --fobex-base: #196164;
+  --fobex-base: #0BCBEF;
   --fobex-base-rgb: 25, 97, 100;
   --fobex-black: #15332A;
   --fobex-black-rgb: 21, 51, 42;
-  --fobex-primary: #CFFF45;
+  --fobex-primary: #0150EE;
   --fobex-primary-rgb: 207, 255, 69;
   --fobex-bdr-color: #CED7D1;
   --fobex-bdr-rgb: 206, 215, 209;
@@ -714,7 +714,7 @@ ul {
 .main-menu__btn {
   padding: 14px 31px 12px;
   background-color: var(--fobex-primary);
-  color: var(--fobex-black);
+  color: #ffffff;
   border-radius: 26px;
 }
 
