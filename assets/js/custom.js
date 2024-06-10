@@ -3,8 +3,19 @@ $(document).ready(function () {
     handleOwlCarousel();
     commercialCleaningHandle();
 
+    navBarToggler();
+
 
 });
+
+const navBarToggler = () => {
+
+    $(document).on('click', '.main-menu__toggle-menu', function (e) {
+        $(".mobile-nav__wrapper").toggleClass("expanded");
+    });
+
+};
+
 
 const handleOwlCarousel = () => {
     const mainSlider = $(".main-slider").owlCarousel({

@@ -1064,6 +1064,7 @@ ul {
 }
 
 .mobile-nav__wrapper.expanded {
+  z-index: 9999999999;
   opacity: 1;
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
@@ -1087,7 +1088,7 @@ ul {
 
 .mobile-nav__content {
   width: 300px;
-  background-color: var(--fobex-black);
+  background-color: #0BCBEF;
   z-index: 10;
   position: relative;
   height: 100%;
