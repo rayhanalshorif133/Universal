@@ -102,7 +102,7 @@
     position: absolute;
     z-index: 999;
     top: 50%;
-    display: flex;
+    display: none;
     justify-content: space-between;
     width: 100%;
 }
@@ -138,7 +138,6 @@
 
 
 
-.commercial_cleaning_left {}
 
 .commercial_cleaning_left .title {
     font-size: 22px !important;
@@ -146,6 +145,12 @@
 
 .commercial_cleaning_left h2 {
     font-size: 18px !important;
+    text-align: justify;
+}
+
+.commercial_cleaning_left p {
+    font-size: 14px !important;
+    text-align: justify;
 }
 
 .h-full {
@@ -170,6 +175,11 @@
     height: 0px;
     top: 30px;
     left: -73px;
+}
+
+.team-two_container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .commercial_cleaning_left .checkbox {
@@ -226,6 +236,22 @@
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.commercial_cleaning_right input:focus,
+.commercial_cleaning_right select:focus {
+    border: 2px solid #0BCBEF;
+    outline: none;
+}
+
+.commercial_cleaning_right h2 {
+    color: #00000080;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
 .main-menu__toggle-menu {
     padding: 0 30px;
     cursor: pointer;
@@ -235,6 +261,33 @@
 .main-menu__toggle-menu i {
     font-size: 25px;
     color: #ffffff;
+}
+
+.get_my_quote_btn {
+    background-color: #3f51b5;
+    color: #ffffff;
+}
+
+.get_my_quote_btn:hover {
+    color: #ffffff;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, .2), 0px 4px 5px 0px rgba(0, 0, 0, .14), 0px 1px 10px 0px rgba(0, 0, 0, .12);
+}
+
+
+.gellary_container{
+
+}
+.gellary_container a{
+    margin: 10px;
+    display: block;
+}
+
+.gellary_container a img{
+    width: auto;
+}
+
+.lightbox{
+z-index: 999999999!important; 
 }
 
 /* media tag devices:start */
@@ -293,6 +346,26 @@
         height: 60px;
     }
 
+    .team-slider-btn div {
+        display: none;
+    }
+
+    .team-two_container {
+        flex-direction: column;
+    }
+
+    .team-two {
+        padding: 0 0 90px;
+    }
+
+    .commercial_cleaning_right_container{
+        margin-top: 75px!important;
+    }
+
+    .gellary_container a img{
+        width: 150px;
+    }
+
 
 
 
@@ -343,6 +416,10 @@
         display: block;
     }
 
+    .commercial_cleaning_right_container{
+        margin-top: 4.5rem!important;
+    }
+
 }
 
 /* 768px iPads, Tablets */
@@ -370,6 +447,14 @@
 
     .main-header-top-gap {
         margin-top: 70px;
+    }
+
+    .services-btn-container {
+        display: flex;
+    }
+
+    .commercial_cleaning_right_container{
+        margin-top: 0!important;
     }
 }
 

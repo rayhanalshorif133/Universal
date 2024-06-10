@@ -42,6 +42,8 @@
     <link rel="stylesheet" href="./assets/css/fobex.css" />
     <link rel="stylesheet" href="./assets/css/custom.css" />
     <link rel="stylesheet" href="./assets/css/fobex-responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body class="custom-cursor">
@@ -280,7 +282,7 @@
                     <div class="section-title__tagline-box">
                         <p class="section-title__tagline">dedicated member</p>
                     </div>
-                    <div class="d-flex justify-content-between">
+                    <div class="team-two_container">
                         <h2 class="section-title__title">Expert consulting team</h2>
                         <div class="d-flex team-slider-btn">
                             <div class="team-left-btn">
@@ -830,10 +832,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 commercial_cleaning_right_container">
                             <div class="commercial_cleaning_right">
                                 <form action="#">
-                                    <h3 class="title">Get your quote for Commercial Cleaning. Prices start from £15 per hour.</h3>
+                                    <h3 class="title">Get your quote for Commercial Cleaning. Prices start from £15 per
+                                        hour.</h3>
                                     <div class="mt-4">
                                         <input type="text" placeholder="Your Name *" class="form-control-custom">
                                     </div>
@@ -850,12 +853,142 @@
                                         <input type="text" placeholder="Post Code" class="form-control-custom">
                                     </div>
                                     <div class="mt-4">
-                                        <select class="form-control-custom" placeholder=""
+                                        <select class="form-control-custom" aria-label="Default select example">
+                                            <option value="" selected>Select a service *</option>
+                                            <option value="Commercial Cleaning">Commercial Cleaning</option>
+                                            <option value="Office Cleaning">Office Cleaning</option>
+                                            <option value="Retail, Leisure &amp; Hospitality Cleaning">Retail, Leisure &
+                                                Hospitality Cleaning</option>
+                                            <option value="Education Cleaning">Education Cleaning</option>
+                                            <option value="One-Off Cleans">One-Off Cleans</option>
+                                            <option value="Carpet Cleaning">Carpet Cleaning</option>
+                                            <option value="Window Cleaning">Window Cleaning</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="mt-4">
+                                        <h2>How often do you need cleaning?</h2>
+
+                                        <div class="mt-2 row">
+                                            <div class="col-12 col-md-6">
+                                                <input type="radio" name="check_cleaning" id="daily" value="Daily">
+                                                <label for="daily" class="cursor-pointer">Daily</label>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <input type="radio" name="check_cleaning" id="weekly" value="Weekly">
+                                                <label for="weekly" class="cursor-pointer">Weekly</label>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <input type="radio" name="check_cleaning" id="monthly" value="Monthly">
+                                                <label for="monthly" class="cursor-pointer">Monthly</label>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <input type="radio" name="check_cleaning" id="one_off" value="One-off">
+                                                <label for="one_off" class="cursor-pointer">One-off</label>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <input type="radio" name="check_cleaning" id="other" value="Other">
+                                                <label for="other" class="cursor-pointer">Other</label>
+                                            </div>
+                                        </div>
+                                        <h2>Upload photo, floorplans or drawings</h2>
+                                        <div class="mb-3">
+                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                        </div>
+                                        <h2>Your file must be a doc, pdf, docx, jpeg, png or jpg and no bigger than 10MB
+                                        </h2>
+                                        <h2>
+                                            You must give us consent to save your data and handle it safely according to
+                                            our
+                                            <a href="#"> Privacy Policy</a>
+                                        </h2>
+                                        <div>
+                                            <input type="checkbox" name="is_agree" class="cursor-pointer" id="is_agree">
+                                            <label for="is_agree" class="cursor-pointer">
+                                                I agree and give consent to Proactive Cleaners to save my data and
+                                                contact me.
+                                            </label>
+                                        </div>
+                                        <div class="mt-4">
+                                            <button type="submit" class="get_my_quote_btn btn">
+                                                Get my Quote
+                                            </button>
+                                        </div>
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <!-- ::Commercial Cleaning::Section::End -->
+
+        <!-- Explore The World Of Proactive Cleaners -->
+        <!-- ::Commercial Cleaning::Section::Start -->
+        <section class="team-two">
+            <div class="container">
+                <div class="section-title text-left">
+                    <div class="section-title__tagline-box">
+                        <p class="section-title__tagline">Proactive Cleaners</p>
+                    </div>
+                    <h2 class="section-title__title">
+                        Explore The World Of Proactive Cleaners
+                    </h2>
+                </div>
+                <!-- on gellary -->
+                <div class="gellary_container row">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                        <a href="https://picsum.photos/600?random=1" data-lightbox="roadtrip">
+                            <img src="https://picsum.photos/200?random=1" alt="img 1">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                        <a href="https://picsum.photos/600?random=2" data-lightbox="roadtrip">
+                            <img src="https://picsum.photos/200?random=2" alt="img 2">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                        <a href="https://picsum.photos/600?random=3" data-lightbox="roadtrip">
+                            <img src="https://picsum.photos/200?random=3" alt="img 3">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                        <a href="https://picsum.photos/600?random=4" data-lightbox="roadtrip">
+                            <img src="https://picsum.photos/200?random=4" alt="img 4">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                        <a href="https://picsum.photos/600?random=5" data-lightbox="roadtrip">
+                            <img src="https://picsum.photos/200?random=5" alt="img 5">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                        <a href="https://picsum.photos/600?random=6" data-lightbox="roadtrip">
+                            <img src="https://picsum.photos/200?random=6" alt="img 6">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                        <a href="https://picsum.photos/600?random=7" data-lightbox="roadtrip">
+                            <img src="https://picsum.photos/200?random=7" alt="img 7">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                        <a href="https://picsum.photos/600?random=8" data-lightbox="roadtrip">
+                            <img src="https://picsum.photos/200?random=8" alt="img 8">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                        <a href="https://picsum.photos/600?random=9" data-lightbox="roadtrip">
+                            <img src="https://picsum.photos/200?random=9" alt="img 9">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                        <a href="https://picsum.photos/600?random=10" data-lightbox="roadtrip">
+                            <img src="https://picsum.photos/200?random=10" alt="img 10">
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -1018,29 +1151,31 @@
                     <img src="assets/images/only_logo.png" alt="">
                 </a>
                 <h3 class="mobile-nav__title">
-                    Universal Logistic <br/>
+                    Universal Logistic <br />
                     <span class="mx-auto text-center">&</span>
                     Consuilancy Ltd.
                 </h3>
             </div>
             <!-- /.logo-box -->
-            <div class="mobile-nav__container"><ul class="main-menu__list">
-                                    <li class="current">
-                                        <a href="index.html">Home </a>
-                                    </li>
-                                    <li>
-                                        <a href="about.html">About</a>
-                                    </li>
-                                    <li>
-                                        <a href="services.html">Services</a>
-                                    </li>
-                                    <li>
-                                        <a href="services.html">Package</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">Contact</a>
-                                    </li>
-                                </ul></div>
+            <div class="mobile-nav__container">
+                <ul class="main-menu__list">
+                    <li class="current">
+                        <a href="index.html">Home </a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Package</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
             <!-- /.mobile-nav__container -->
 
             <ul class="mobile-nav__contact list-unstyled">
@@ -1109,6 +1244,8 @@
     <script src="./assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
     <script src="./assets/vendors/jquery.circle-type/jquery.circleType.js"></script>
     <script src="./assets/vendors/jquery.circle-type/jquery.lettering.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
 
 
@@ -1116,9 +1253,7 @@
     <!-- template js -->
     <script src="./assets/js/fobex.js"></script>
     <script src="./assets/js/custom.js"></script>
-    <script>
 
-    </script>
 </body>
 
 
