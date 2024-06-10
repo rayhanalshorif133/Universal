@@ -3781,7 +3781,6 @@ ul {
   position: relative;
   display: block;
   background-color: #0BCBEF;
-  padding-top: 120px;
   z-index: 1;
 }
 
@@ -4169,7 +4168,7 @@ ul {
 }
 
 .site-footer__bottom-text {
-  color: #95A49F;
+  color: #525252;
 }
 
 .site-footer__bottom-text a {
@@ -4202,7 +4201,7 @@ ul {
   display: flex;
   align-items: center;
   font-size: 16px;
-  color: #95A49F;
+  color: #505050;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
