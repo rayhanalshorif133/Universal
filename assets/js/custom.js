@@ -167,12 +167,12 @@ const commercialCleaningHandle = () => {
                 var divElement = document.getElementById(ID);
                 var boundingRect = divElement.getBoundingClientRect();
                 if (boundingRect.top < 464) {
-                    $(`#item-${index}`).css('background-color', '#376494');
+                    $(`#item-${index}`).css('background-color', '#0BCBEF');
                     $(`#item-${index} i`).css('color', '#fff');
                     $(`#item-${index}`).addClass('active');
                 } else {
                     $(`#item-${index}`).css('background-color', '#EEEEEE');
-                    $(`#item-${index} i`).css('color', '#376494');
+                    $(`#item-${index} i`).css('color', '#0BCBEF');
                     $(`#item-${index}`).removeClass('active');
                 }
 
