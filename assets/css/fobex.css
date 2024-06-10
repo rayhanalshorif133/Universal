@@ -504,7 +504,6 @@ ul {
 
 /* scroll to top */
 .scroll-to-top {
-  display: inline-block;
   width: 60px;
   height: 60px;
   background: var(--fobex-black);
@@ -525,6 +524,9 @@ ul {
   line-height: 60px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .scroll-to-top:hover {
@@ -1130,10 +1132,14 @@ ul {
 }
 
 .mobile-nav__content .logo-box .mobile-nav__title{
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   margin-top: 18px;
   color: #ffffff;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-direction: column;
 }
 
 .mobile-nav__close {
