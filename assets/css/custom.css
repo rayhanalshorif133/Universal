@@ -288,6 +288,128 @@
     z-index: 999999999 !important;
 }
 
+.breadcrumb-item::after {
+    content: '\A';
+    background: #5F788C;
+    height: 6px;
+    width: 6px;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    left: 5px;
+}
+
+.img-rounded {
+    border-radius: 10px;
+}
+
+
+.container-custom {
+    padding: 0 140px;
+}
+
+.check_price_availability_btn {
+    padding: 5px 10px;
+    background: #0B99EA;
+    color: #ffffff;
+}
+
+.check_price_availability_btn:hover {
+    color: #ffffff;
+    -webkit-box-shadow: 3px 3px 10px 5px rgba(117, 117, 117, 1);
+    -moz-box-shadow: 3px 3px 10px 5px rgba(117, 117, 117, 1);
+    box-shadow: 3px 3px 10px 5px rgba(117, 117, 117, 1);
+}
+
+.review_container h3 {
+    font-size: 18px;
+}
+
+.star_container {
+    height: 30px;
+    width: 30px;
+    background-color: #058d5f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+}
+
+.star_container i {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-5-white {
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+}
+
+.nav-pills .nav-item {
+    margin-left: 10px !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #0150EE;
+    background-color: transparent !important;
+    border-bottom: 3px solid #0150EE;
+    border-radius: 0%;
+}
+
+.logistic_tab_box {
+    padding-top: 2px;
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(117, 117, 117, 1);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(117, 117, 117, 1);
+    box-shadow: 0px 0px 7px 0px rgba(117, 117, 117, 1);
+}
+
+.mr-1 {
+    margin-right: 0.5rem;
+}
+
+.alert_container {
+    background-color: #a9defd;
+    padding: 10px;
+    display: flex;
+    border-radius: 5px;
+}
+
+.alert_container i {
+    color: #005282;
+}
+
+.alert_container h3 {
+    color: #2a2a2a;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.item_box {
+    background: #ffffff;
+    padding: 12px 20px;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(117, 117, 117, 1);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(117, 117, 117, 1);
+    box-shadow: 0px 1px 5px 0px rgba(117, 117, 117, 1);
+    border-radius: 4px;
+}
+
+.item_box i{
+    margin-right: 10px;
+}
+
+.item_box:hover{
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(117, 117, 117, 1);
+    -moz-box-shadow: 0px 1px 10px 0px rgba(117, 117, 117, 1);
+    box-shadow: 0px 1px 10px 0px rgba(117, 117, 117, 1);
+    cursor: pointer;
+}
+
 /* media tag devices:start */
 /*  320px — 480px: Mobile devices */
 @media screen and (min-width: 320px) and (max-width: 480px) {

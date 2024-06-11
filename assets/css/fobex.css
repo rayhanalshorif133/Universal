@@ -574,6 +574,14 @@ ul {
 
 }
 
+/* 
+sm: 540px,
+  md: ,
+  lg: ,
+  xl: ,
+  xxl: 
+*/
+
 .main-menu__wrapper-inner:before {
   content: "";
   position: absolute;
@@ -796,7 +804,7 @@ ul {
   color: var(--fobex-white);
   transform: translateY(-50%);
   font-weight: 700;
-  z-index: 1;
+  z-index: 99999;
 }
 
 .main-menu .main-menu__list>li.current>a::after,
