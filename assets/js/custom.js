@@ -166,7 +166,7 @@ const commercialCleaningHandle = () => {
                 const ID = `item-${index}`;
                 var divElement = document.getElementById(ID);
                 var boundingRect = divElement.getBoundingClientRect();
-                if (boundingRect.top < 364) {
+                if (boundingRect.top < 464) {
                     $(`#item-${index}`).css('background-color', '#0BCBEF');
                     $(`#item-${index} i`).css('color', '#fff');
                     $(`#item-${index}`).addClass('active');
