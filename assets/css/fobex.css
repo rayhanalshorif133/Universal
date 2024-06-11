@@ -49,9 +49,7 @@ body {
   color: var(--fobex-gray);
 }
 
-body.locked {
-  overflow: hidden;
-}
+
 
 a {
   color: var(--fobex-base);
@@ -130,7 +128,6 @@ ul {
   margin: 0 auto;
   width: 100%;
   min-width: 300px;
-  overflow: hidden;
 }
 
 .container {
@@ -544,14 +541,8 @@ ul {
 --------------------------------------------------------------*/
 .main-header {
   background: transparent;
-  left: 0px;
-  top: 0px;
-  right: 0;
   width: 100%;
   transition: all 500ms ease;
-  z-index: 999999;
-  position: fixed;
-  top: 0;
   width: 100%;
 }
 
@@ -582,6 +573,14 @@ ul {
   background: #0BCBEF;
 
 }
+
+/* 
+sm: 540px,
+  md: ,
+  lg: ,
+  xl: ,
+  xxl: 
+*/
 
 .main-menu__wrapper-inner:before {
   content: "";
@@ -805,7 +804,7 @@ ul {
   color: var(--fobex-white);
   transform: translateY(-50%);
   font-weight: 700;
-  z-index: 1;
+  z-index: 99999;
 }
 
 .main-menu .main-menu__list>li.current>a::after,
