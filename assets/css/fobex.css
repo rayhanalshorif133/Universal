@@ -49,9 +49,7 @@ body {
   color: var(--fobex-gray);
 }
 
-body.locked {
-  overflow: hidden;
-}
+
 
 a {
   color: var(--fobex-base);
