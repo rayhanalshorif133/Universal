@@ -130,7 +130,6 @@ ul {
   margin: 0 auto;
   width: 100%;
   min-width: 300px;
-  overflow: hidden;
 }
 
 .container {
@@ -544,14 +543,8 @@ ul {
 --------------------------------------------------------------*/
 .main-header {
   background: transparent;
-  left: 0px;
-  top: 0px;
-  right: 0;
   width: 100%;
   transition: all 500ms ease;
-  z-index: 999999;
-  position: fixed;
-  top: 0;
   width: 100%;
 }
 
