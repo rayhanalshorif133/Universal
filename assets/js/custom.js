@@ -145,28 +145,28 @@ const handleOwlCarousel = () => {
 const commercialCleaningHandle = () => {
 
 
+
     var SETPOINT = false;
 
     $(document).on('scroll', function (e) {
 
+        const GET_Side_Line = $(".side-line").height();
         var topBar = $(this).scrollTop(); // Get the current scroll position
         topBar > 2806 ? topBar -= 2806 : topBar = 0;
 
         if (topBar > 0) {
-            if (topBar > 2480) {
-                topBar = 2480;
+            if (topBar > GET_Side_Line) {
+                return false;
             }
-            if (!SETPOINT) {
-                var setHeight = topBar + 'px';
-                $(".side-line-green").css('height', setHeight);
-            }
+            var setHeight = topBar + 'px';
+            $(".side-line-green").css('height', setHeight);
 
             var count = $('.side-line-green').data('count');
             for (let index = 0; index < count; index++) {
                 const ID = `item-${index}`;
                 var divElement = document.getElementById(ID);
                 var boundingRect = divElement.getBoundingClientRect();
-                if (boundingRect.top < 464) {
+                if (boundingRect.top < 364) {
                     $(`#item-${index}`).css('background-color', '#0BCBEF');
                     $(`#item-${index} i`).css('color', '#fff');
                     $(`#item-${index}`).addClass('active');
@@ -185,20 +185,6 @@ const commercialCleaningHandle = () => {
         }
 
 
-        const checkBoxs = $(".checkbox");
-        var hasActiveClassCount = 0;
-        var count = $('.side-line-green').data('count');
-        checkBoxs.map(function (index, element) {
-            // get has active class
-            const hasActiveClass = $(element).hasClass('active');
-            hasActiveClass == true ? hasActiveClassCount++ : hasActiveClassCount--;
-        });
-
-        if (count == hasActiveClassCount) {
-            SETPOINT = true;
-        } else {
-            SETPOINT = false;
-        }
 
     });
 };
