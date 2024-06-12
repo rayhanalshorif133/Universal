@@ -1202,7 +1202,7 @@ sm: 540px,
 }
 
 .mobile-nav__content .main-menu__list li a.expanded {
-  color: var(--fobex-base);
+  color: #ffffff;
 }
 
 .mobile-nav__content .main-menu__list>li>a>button,

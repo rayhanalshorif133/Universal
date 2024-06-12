@@ -490,6 +490,10 @@
         width: -webkit-fill-available;
     }
 
+    .main_image_logistic_left{
+        display: block;
+    }
+
 
 
 
@@ -613,6 +617,10 @@
     .main-menu__toggle-menu {
         display: block;
     }
+
+    .main_image_logistic_left{
+        display: none;
+    }
 }
 
 /* 1201px and more —  Extra large screens, TV */
@@ -624,6 +632,10 @@
 
     .slider-btn a {
         padding: 14px 35px;
+    }
+
+    .main_image_logistic_left{
+        display: none;
     }
 
     .main-menu__toggle-menu {
