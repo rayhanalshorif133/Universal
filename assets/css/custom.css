@@ -543,6 +543,16 @@
         margin: 5px 0;
     }
 
+    .commercial_cleaning_left .checkbox {
+        height: 2rem !important;
+        width: 2rem !important;
+        left: -87px;
+    }
+
+    .commercial_cleaning_left .checkbox i {
+        font-size: 18px!important;
+    }
+
 
 
 
@@ -624,6 +634,11 @@
 
     .border-5-white{
         border: none;
+    }
+
+    .team-two,
+    .services-two {
+        padding: 30px 0 30px;
     }
 
 }
