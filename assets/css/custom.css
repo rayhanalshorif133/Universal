@@ -321,8 +321,18 @@
     box-shadow: 3px 3px 10px 5px rgba(117, 117, 117, 1);
 }
 
+.review_container{
+    display: flex;
+    margin-top: 1.5rem !important;
+}
 .review_container h3 {
     font-size: 18px;
+}
+
+.star_container_main{
+    top: -6px;
+    position:relative;
+    display: flex;
 }
 
 .star_container {
@@ -410,6 +420,15 @@
     cursor: pointer;
 }
 
+.main_image_logistic_left .image_container_1{
+    position: relative;
+}
+
+.main_image_logistic_left .image_container_2{
+    position: absolute;
+    top: 6rem;left: -6rem;
+}
+
 /* media tag devices:start */
 /*  320px — 480px: Mobile devices */
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -490,6 +509,50 @@
         width: -webkit-fill-available;
     }
 
+    .main_image_logistic_right{
+        display: none;
+    }
+
+    .main_image_logistic_left{
+        display: block;
+    }
+
+    .main_image_logistic_left img{
+        height: auto;
+        width: 100%;
+    }
+
+    .main_image_logistic_left .image_container_2 {
+        top: 0;
+        left: 0;
+        margin: 0.7rem 0;
+        position: relative;
+    }
+
+    .border-5-white {
+        border: 0px solid #ffffff;
+        border-radius: 10px;
+    }   
+    
+    .review_container {
+        display: block;
+    }
+
+    .star_container_main{
+        top: 0;
+        margin: 5px 0;
+    }
+
+    .commercial_cleaning_left .checkbox {
+        height: 2rem !important;
+        width: 2rem !important;
+        left: -87px;
+    }
+
+    .commercial_cleaning_left .checkbox i {
+        font-size: 18px!important;
+    }
+
 
 
 
@@ -542,6 +605,40 @@
 
     .commercial_cleaning_right_container {
         margin-top: 4.5rem !important;
+    }
+
+    .main_image_logistic_right{
+        display: none;
+    }
+
+    .main_image_logistic_left{
+        display: block;
+    }
+
+    .main_image_logistic_left img{
+        height: auto;
+        width: 80%;
+        display: flex;
+        margin: auto;
+    }
+
+    .main_image_logistic_left .image_container_2 {
+        position: relative;
+        top: -3rem;
+        left: -2rem;
+    }
+
+    .main_image_logistic_left .image_container_2 img{
+        border: 4px solid #ffffff;
+    }
+
+    .border-5-white{
+        border: none;
+    }
+
+    .team-two,
+    .services-two {
+        padding: 30px 0 30px;
     }
 
 }
@@ -613,6 +710,10 @@
     .main-menu__toggle-menu {
         display: block;
     }
+
+    .main_image_logistic_left{
+        display: none;
+    }
 }
 
 /* 1201px and more —  Extra large screens, TV */
@@ -624,6 +725,10 @@
 
     .slider-btn a {
         padding: 14px 35px;
+    }
+
+    .main_image_logistic_left{
+        display: none;
     }
 
     .main-menu__toggle-menu {

@@ -1202,7 +1202,7 @@ sm: 540px,
 }
 
 .mobile-nav__content .main-menu__list li a.expanded {
-  color: var(--fobex-base);
+  color: #ffffff;
 }
 
 .mobile-nav__content .main-menu__list>li>a>button,
@@ -2281,7 +2281,7 @@ sm: 540px,
 .feature-one {
   position: relative;
   display: block;
-  padding: 120px 0 90px;
+  padding: 30px 0 50px;
   background-color: #EBF3EE;
   z-index: 1;
 }
@@ -2890,7 +2890,7 @@ sm: 540px,
 .project-one {
   position: relative;
   display: block;
-  padding: 120px 0 120px;
+  padding: 30px 0 50px;
   z-index: 1;
 }
 
@@ -3403,7 +3403,7 @@ sm: 540px,
 .pricing-one {
   position: relative;
   display: block;
-  padding: 120px 0 90px;
+  padding: 30px 0 50px;
   z-index: 1;
 }
 
@@ -4348,7 +4348,7 @@ sm: 540px,
 .about-two {
   position: relative;
   display: block;
-  padding: 120px 0 120px;
+  padding: 30px 0 50px;
   overflow: hidden;
   z-index: 1;
 }
@@ -4511,7 +4511,7 @@ sm: 540px,
 .services-two {
   position: relative;
   display: block;
-  padding: 120px 0 120px;
+  padding: 30px 0 50px;
   z-index: 1;
 }
 
@@ -4741,7 +4741,7 @@ sm: 540px,
 .faq-one {
   position: relative;
   display: block;
-  padding: 120px 0 120px;
+  padding: 30px 0 50px;
   z-index: 1;
 }
 
@@ -4909,7 +4909,7 @@ sm: 540px,
 .team-one {
   position: relative;
   display: block;
-  padding: 120px 0 90px;
+  padding: 30px 0 50px;
   z-index: 1;
 }
 
@@ -5316,7 +5316,7 @@ sm: 540px,
 .news-two {
   position: relative;
   display: block;
-  padding: 120px 0 90px;
+  padding: 30px 0 50px;
   z-index: 1;
 }
 
@@ -5504,7 +5504,7 @@ sm: 540px,
 .testimonial-two {
   position: relative;
   display: block;
-  padding: 120px 0 120px;
+  padding: 30px 0 50px;
   z-index: 1;
 }
 
@@ -6511,7 +6511,7 @@ sm: 540px,
 .contact-two {
   position: relative;
   display: block;
-  padding: 120px 0 120px;
+  padding: 30px 0 50px;
   z-index: 1;
 }
 
@@ -6682,7 +6682,7 @@ sm: 540px,
 .news-details {
   position: relative;
   display: block;
-  padding: 120px 0 120px;
+  padding: 30px 0 50px;
   z-index: 1;
 }
 
@@ -7145,7 +7145,7 @@ sm: 540px,
   display: block;
   border-top: 1px solid var(--fobex-bdr-color);
   border-bottom: 1px solid var(--fobex-bdr-color);
-  padding: 30px 0 30px;
+  padding: 30px 0 50px;
 }
 
 .news-details__pagenation {
@@ -7673,7 +7673,7 @@ sm: 540px,
 .news-page {
   position: relative;
   display: block;
-  padding: 120px 0 120px;
+  padding: 30px 0 50px;
   z-index: 1;
 }
 
@@ -8089,7 +8089,7 @@ sm: 540px,
   position: relative;
   display: block;
   counter-reset: count;
-  padding: 120px 0 120px;
+  padding: 30px 0 50px;
   z-index: 1;
 }
 
@@ -8401,7 +8401,7 @@ sm: 540px,
 .get-estimate {
   position: relative;
   display: block;
-  padding: 120px 0 120px;
+  padding: 30px 0 50px;
   z-index: 1;
 }
 
@@ -8702,7 +8702,7 @@ sm: 540px,
   position: relative;
   display: block;
   background-color: #F5F8F7;
-  padding: 120px 0 90px;
+  padding: 30px 0 50px;
   z-index: 1;
 }
 
@@ -8781,7 +8781,7 @@ sm: 540px,
 .team-two {
   position: relative;
   display: block;
-  padding: 120px 0 90px;
+  padding: 30px 0 50px;
   z-index: 1;
 }
 
@@ -8978,14 +8978,14 @@ sm: 540px,
 # How It Work Two
 --------------------------------------------------------------*/
 .how-it-work__two {
-  padding: 120px 0 90px;
+  padding: 30px 0 50px;
 }
 
 /*--------------------------------------------------------------
 # Services Four
 --------------------------------------------------------------*/
 .services-four {
-  padding: 120px 0 90px;
+  padding: 30px 0 50px;
 }
 
 .services-four .section-title-two__tagline {
@@ -9267,7 +9267,7 @@ sm: 540px,
 .progress-three {
   position: relative;
   display: block;
-  padding: 120px 0 120px;
+  padding: 30px 0 50px;
   z-index: 1;
 }
 
@@ -9384,7 +9384,7 @@ sm: 540px,
 .services-five {
   position: relative;
   display: block;
-  padding: 120px 0 90px;
+  padding: 30px 0 50px;
   z-index: 1;
 }
 
@@ -9398,7 +9398,7 @@ sm: 540px,
 .project-page {
   position: relative;
   display: block;
-  padding: 120px 0 90px;
+  padding: 30px 0 50px;
   z-index: 1;
 }
 
@@ -9762,7 +9762,7 @@ sm: 540px,
 .services-six {
   position: relative;
   display: block;
-  padding: 120px 0 120px;
+  padding: 30px 0 50px;
   z-index: 1;
 }
 
@@ -10541,7 +10541,7 @@ sm: 540px,
 .testimonials-page {
   position: relative;
   display: block;
-  padding: 120px 0 90px;
+  padding: 30px 0 50px;
 }
 
 .testimonials-page .testimonial-two__single {
