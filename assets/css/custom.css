@@ -747,6 +747,15 @@
         padding: 6px 16px;
     }
 
+    .container, .container-sm {
+        max-width: 720px!important;
+    }
+
+    
+    .review_container h3 {
+        line-height: 24px;
+    }
+
 
 }
 
@@ -774,6 +783,34 @@
 
     .main-header-top-gap {
         margin-top: 70px;
+    }
+
+    .main_image_logistic_right img {
+        width: 100%;
+        height: 10rem;
+    }
+
+    .review_container {
+        display: block;
+    }
+
+    .star_container_main {
+        top: 2px;
+    }
+
+
+    
+}
+
+@media (min-width: 992px) {
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 960px!important;
+    }
+
+    .main_image_logistic_right .image_2 {
+        position: absolute;
+        top: 6rem;
+        left: -3rem;
     }
 }
 
