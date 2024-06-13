@@ -798,6 +798,8 @@
         top: 2px;
     }
 
+    
+
 
     
 }
@@ -823,6 +825,24 @@
     .main_image_logistic_left {
         display: none;
     }
+
+    .main_image_logistic_right img {
+        width: 90%;
+        height: auto;
+    }
+    .main_image_logistic_right .image_2 {
+        position: absolute;
+        top: 6rem;
+        left: -6rem;
+    }
+
+    .border-5-white {
+        border: none
+    }
+
+    .main_image_logistic_right .image_2 img{
+        border: 4px solid #ffffff;
+    }
 }
 
 /* 1201px and more —  Extra large screens, TV */
@@ -842,6 +862,36 @@
 
     .main-menu__toggle-menu {
         display: none;
+    }
+
+    .main_image_logistic_right img {
+        width: 100%;
+        height: auto;
+    }
+    .main_image_logistic_right .image_2 {
+        position: relative;
+        top: -8rem;
+        left: -5rem;
+    }
+
+    .border-5-white {
+        border: none
+    }
+
+    .main_image_logistic_right .image_2 img{
+        border: 4px solid #ffffff;
+    }
+
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 1140px !important;
+    }
+}
+
+
+@media screen and (min-width: 1400px) {
+    
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 1320px !important;
     }
 }
 
