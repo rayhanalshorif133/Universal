@@ -6,11 +6,18 @@ $(document).ready(function () {
     navBarToggler();
 
     handleGellary();
+    exclusiveFeaturesContentBbox();
 
 
 
 
 });
+
+const exclusiveFeaturesContentBbox = () => {
+    $(document).on('click', '.exclusive-features .content-box .item', function(){
+        $(this).toggleClass('active');
+    });
+};
 
 
 const handleGellary = () => {
