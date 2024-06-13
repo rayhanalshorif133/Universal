@@ -321,17 +321,18 @@
     box-shadow: 3px 3px 10px 5px rgba(117, 117, 117, 1);
 }
 
-.review_container{
+.review_container {
     display: flex;
     margin-top: 1.5rem !important;
 }
+
 .review_container h3 {
     font-size: 18px;
 }
 
-.star_container_main{
+.star_container_main {
     top: -6px;
-    position:relative;
+    position: relative;
     display: flex;
 }
 
@@ -409,24 +410,36 @@
     border-radius: 4px;
 }
 
-.item_box i{
+.item_box i {
     margin-right: 10px;
 }
 
-.item_box:hover{
+.item_box:hover {
     -webkit-box-shadow: 0px 1px 10px 0px rgba(117, 117, 117, 1);
     -moz-box-shadow: 0px 1px 10px 0px rgba(117, 117, 117, 1);
     box-shadow: 0px 1px 10px 0px rgba(117, 117, 117, 1);
     cursor: pointer;
 }
 
-.main_image_logistic_left .image_container_1{
+.main_image_logistic_left .image_container_1 {
     position: relative;
 }
 
-.main_image_logistic_left .image_container_2{
+.main_image_logistic_left .image_container_2 {
     position: absolute;
-    top: 6rem;left: -6rem;
+    top: 6rem;
+    left: -6rem;
+}
+
+.contract-cleaning-services {
+    display: flex;
+    margin-left: 6rem;
+}
+
+.main_image_logistic_right .image_2{
+    position: absolute;
+    top: 6rem;
+    left: -6rem;
 }
 
 /* media tag devices:start */
@@ -509,15 +522,15 @@
         width: -webkit-fill-available;
     }
 
-    .main_image_logistic_right{
+    .main_image_logistic_right {
         display: none;
     }
 
-    .main_image_logistic_left{
+    .main_image_logistic_left {
         display: block;
     }
 
-    .main_image_logistic_left img{
+    .main_image_logistic_left img {
         height: auto;
         width: 100%;
     }
@@ -532,13 +545,13 @@
     .border-5-white {
         border: 0px solid #ffffff;
         border-radius: 10px;
-    }   
-    
+    }
+
     .review_container {
         display: block;
     }
 
-    .star_container_main{
+    .star_container_main {
         top: 0;
         margin: 5px 0;
     }
@@ -546,11 +559,28 @@
     .commercial_cleaning_left .checkbox {
         height: 2rem !important;
         width: 2rem !important;
-        left: -87px;
+        left: -53px;
+    }
+
+    .side-line-green {
+        left: -38px;
     }
 
     .commercial_cleaning_left .checkbox i {
-        font-size: 18px!important;
+        font-size: 18px !important;
+    }
+
+    .commercial_cleaning_right {
+        padding: 12px;
+        border-top-left-radius: 30px;
+    }
+
+    .side-line {
+        left: -38px;
+    }
+
+    .contract-cleaning-services {
+        margin-left: 3rem;
     }
 
 
@@ -607,15 +637,15 @@
         margin-top: 4.5rem !important;
     }
 
-    .main_image_logistic_right{
+    .main_image_logistic_right {
         display: none;
     }
 
-    .main_image_logistic_left{
+    .main_image_logistic_left {
         display: block;
     }
 
-    .main_image_logistic_left img{
+    .main_image_logistic_left img {
         height: auto;
         width: 80%;
         display: flex;
@@ -628,11 +658,11 @@
         left: -2rem;
     }
 
-    .main_image_logistic_left .image_container_2 img{
+    .main_image_logistic_left .image_container_2 img {
         border: 4px solid #ffffff;
     }
 
-    .border-5-white{
+    .border-5-white {
         border: none;
     }
 
@@ -641,6 +671,14 @@
         padding: 30px 0 30px;
     }
 
+}
+
+@media (min-width: 576px) {
+
+    .container,
+    .container-sm {
+        max-width: 552px !important;
+    }
 }
 
 /* 768px iPads, Tablets */
@@ -677,7 +715,50 @@
     .commercial_cleaning_right_container {
         margin-top: 0 !important;
     }
+
+    .main_image_logistic_right {
+        display: block;
+    }
+
+    .main_image_logistic_left {
+        display: none;
+    }
+
+    .main_image_logistic_right img {
+        width: 100%;
+        height: 8rem;
+    }
+    .main_image_logistic_right .image_2{
+        position: relative;
+        top: 1rem;
+        left: 0;
+    }
+
+    .review_container{
+        display: block;
+
+    }
+
+    .review_container .star_container_main{
+        margin-top: 10px;
+    }
+
+    .item_box {
+        padding: 6px 16px;
+    }
+
+    .container, .container-sm {
+        max-width: 720px!important;
+    }
+
+    
+    .review_container h3 {
+        line-height: 24px;
+    }
+
+
 }
+
 
 /* 769px — 1024px: Small screens, laptops */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -703,6 +784,36 @@
     .main-header-top-gap {
         margin-top: 70px;
     }
+
+    .main_image_logistic_right img {
+        width: 100%;
+        height: 10rem;
+    }
+
+    .review_container {
+        display: block;
+    }
+
+    .star_container_main {
+        top: 2px;
+    }
+
+    
+
+
+    
+}
+
+@media (min-width: 992px) {
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 960px!important;
+    }
+
+    .main_image_logistic_right .image_2 {
+        position: absolute;
+        top: 6rem;
+        left: -3rem;
+    }
 }
 
 /* 1025px — 1200px: Desktops, large screens */
@@ -711,8 +822,26 @@
         display: block;
     }
 
-    .main_image_logistic_left{
+    .main_image_logistic_left {
         display: none;
+    }
+
+    .main_image_logistic_right img {
+        width: 90%;
+        height: auto;
+    }
+    .main_image_logistic_right .image_2 {
+        position: absolute;
+        top: 6rem;
+        left: -6rem;
+    }
+
+    .border-5-white {
+        border: none
+    }
+
+    .main_image_logistic_right .image_2 img{
+        border: 4px solid #ffffff;
     }
 }
 
@@ -727,12 +856,42 @@
         padding: 14px 35px;
     }
 
-    .main_image_logistic_left{
+    .main_image_logistic_left {
         display: none;
     }
 
     .main-menu__toggle-menu {
         display: none;
+    }
+
+    .main_image_logistic_right img {
+        width: 100%;
+        height: auto;
+    }
+    .main_image_logistic_right .image_2 {
+        position: relative;
+        top: -8rem;
+        left: -5rem;
+    }
+
+    .border-5-white {
+        border: none
+    }
+
+    .main_image_logistic_right .image_2 img{
+        border: 4px solid #ffffff;
+    }
+
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 1140px !important;
+    }
+}
+
+
+@media screen and (min-width: 1400px) {
+    
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 1320px !important;
     }
 }
 
