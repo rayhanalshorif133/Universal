@@ -165,14 +165,17 @@
     left: -73px;
 }
 
+
+
 .mt-5rem {
     margin-top: 5rem;
 }
 
 .side-line-green {
-    background: #0BCBEF;
     width: 4px;
-    height: 0px;
+    height: 10px;
+    background: #0BCBEF;
+    position: absolute;
     top: 30px;
     left: -73px;
 }

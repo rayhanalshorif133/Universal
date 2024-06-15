@@ -153,13 +153,38 @@ const commercialCleaningHandle = () => {
 
 
 
-    var SETPOINT = false;
 
     $(document).on('scroll', function (e) {
 
         const GET_Side_Line = $(".side-line").height();
+        const current_width = $(document).width();
+        const current_Height = $(document).height();
+        // console.log(checkbox)
+        // if checkbox is not visible
+
+
+
         var topBar = $(this).scrollTop(); // Get the current scroll position
-        topBar > 2806 ? topBar -= 2806 : topBar = 0;
+
+        // 320px 480px
+        console.log(current_width)
+
+        var SETGREEN_LINE_POSITION = 0;
+
+        if(current_width == 320){
+            topBar > 2619 ? topBar -= 2619 : topBar = 0;
+            SETGREEN_LINE_POSITION = 310;
+        }else if(current_width > 374 && current_width < 426){
+            topBar > 2649 ? topBar -= 2649 : topBar = 0;
+            SETGREEN_LINE_POSITION = 190;
+        }else if(current_width == 779){
+            topBar > 2400 ? topBar -= 2400 : topBar = 0;
+            SETGREEN_LINE_POSITION = 250;
+        }else if(current_width > 1024){
+            console.log(topBar,"topBar")
+            topBar > 2513 ? topBar -= 2513 : topBar = 0;
+            SETGREEN_LINE_POSITION = 190;
+        }
 
         if (topBar > 0) {
             if (topBar > GET_Side_Line) {
@@ -173,7 +198,7 @@ const commercialCleaningHandle = () => {
                 const ID = `item-${index}`;
                 var divElement = document.getElementById(ID);
                 var boundingRect = divElement.getBoundingClientRect();
-                if (boundingRect.top < 464) {
+                if (boundingRect.top < SETGREEN_LINE_POSITION) {
                     $(`#item-${index}`).css('background-color', '#0BCBEF');
                     $(`#item-${index} i`).css('color', '#fff');
                     $(`#item-${index}`).addClass('active');
