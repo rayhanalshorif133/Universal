@@ -573,6 +573,21 @@
     align-items: center;
 }
 
+.explore_more_btn{
+    background: #004f7a;
+    height: 3.4rem;
+    width: auto;
+    padding: 0 30px;
+    border-radius: 40px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.explore_more_btn:hover{
+    background: #003f60;
+    color: #ffffff;
+}
+
 
 
 /* media tag devices:start */
@@ -719,6 +734,13 @@
     }
 
 
+    .explore_more_btn{
+        height: 2.5rem;
+        border-radius: 40px;
+        font-size: 12px;
+    }
+
+
 
 
 }
@@ -809,6 +831,13 @@
     .scroll-to-top {
         width: 40px;
         height: 40px;
+    }
+
+
+    .explore_more_btn{
+        height: 2.5rem;
+        border-radius: 40px;
+        font-size: 12px;
     }
 
 }
