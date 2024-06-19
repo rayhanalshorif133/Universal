@@ -7,14 +7,44 @@ $(document).ready(function () {
 
     handleGellary();
     exclusiveFeaturesContentBbox();
+    counterHandler();
 
 
 
 
 });
 
+const counterHandler = () => {
+    var counters = $(".count");
+    var countersQuantity = counters.length;
+    var counter = [];
+
+    for (i = 0; i < countersQuantity; i++) {
+        counter[i] = {
+            "count" : parseInt(counters[i].innerHTML),
+            "speed" :$(counters[i]).data('speed')
+        }
+        
+    }
+
+
+    var count = function (start, value,speed, id) {
+        var localStart = start;
+        setInterval(function () {
+            if (localStart < value) {
+                localStart++;
+                counters[id].innerHTML = localStart;
+            }
+        }, speed);
+    }
+
+    for (j = 0; j < countersQuantity; j++) {
+        count(0, counter[j].count,counter[j].speed, j);
+    }
+};
+
 const exclusiveFeaturesContentBbox = () => {
-    $(document).on('click', '.exclusive-features .content-box .item', function(){
+    $(document).on('click', '.exclusive-features .content-box .item', function () {
         $(this).toggleClass('active');
     });
 };
@@ -171,17 +201,17 @@ const commercialCleaningHandle = () => {
 
         var SETGREEN_LINE_POSITION = 0;
 
-        if(current_width == 320){
+        if (current_width == 320) {
             topBar > 2619 ? topBar -= 2619 : topBar = 0;
             SETGREEN_LINE_POSITION = 310;
-        }else if(current_width > 374 && current_width < 426){
+        } else if (current_width > 374 && current_width < 426) {
             topBar > 2649 ? topBar -= 2649 : topBar = 0;
             SETGREEN_LINE_POSITION = 190;
-        }else if(current_width == 779){
+        } else if (current_width == 779) {
             topBar > 2400 ? topBar -= 2400 : topBar = 0;
             SETGREEN_LINE_POSITION = 250;
-        }else if(current_width > 1024){
-            console.log(topBar,"topBar")
+        } else if (current_width > 1024) {
+            console.log(topBar, "topBar")
             topBar > 2513 ? topBar -= 2513 : topBar = 0;
             SETGREEN_LINE_POSITION = 190;
         }
