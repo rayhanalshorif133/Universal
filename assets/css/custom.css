@@ -685,6 +685,7 @@
     border: 4px solid #ffffff;
 }
 
+.trust_our_expertise .left_side p,
 .high_standards .right_container p {
     font-size: 12px;
     font-weight: bold;
@@ -692,11 +693,13 @@
     margin-bottom: 10px;
 }
 
+.trust_our_expertise .left_side h1,
 .high_standards .right_container h1 {
     font-size: 26px;
     font-weight: bold;
 }
 
+.trust_our_expertise .left_side h2,
 .high_standards .right_container ul li,
 .high_standards .right_container h2 {
     font-size: 16px;
