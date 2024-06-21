@@ -8,11 +8,19 @@ $(document).ready(function () {
     handleGellary();
     exclusiveFeaturesContentBbox();
     counterHandler();
+    trustOurExpertise();
 
 
 
 
 });
+
+const trustOurExpertise = () => {
+    $(".trust_our_expertise .item i").click(function(){
+        $(this).toggleClass('fa-plus').toggleClass('fa-minus');
+        $(this).parent().next().toggleClass('show');
+    });
+};
 
 const counterHandler = () => {
     var counters = $(".count");
