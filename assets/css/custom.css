@@ -770,12 +770,14 @@
     text-decoration: underline;
 }
 
-
+.deep_cleaning_gellary .slug,
 .designed_to_meet_your_needs .slug{
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 2px;
     margin-bottom: 10px;
+    padding-top: 10px;
+    text-transform: uppercase;
 }
 .designed_to_meet_your_needs .title{
     font-size: 26px;
@@ -818,6 +820,58 @@
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+.owl-dots{
+    display: flex;
+    justify-content: center;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    height: 10px;
+    width: 10px;
+    background-color: #c2c2c2;
+    border-radius: 50%;
+    margin: 5px;
+
+}
+
+.owl-dots .active{
+    background-color: #0150EE!important;
+}
+
+.overlay_text{
+    background: #000;
+    padding: 0px 10px;
+    position: absolute;
+    color: #fff;
+    height: auto;
+    width: fit-content;
+    bottom: 2rem;
+    z-index: 99999;
+    left: 25%;
+    border-radius: 5px;
+}
+
+.overlay_text p{
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.divider{
+    height: 100%;
+    width: 2px;
+    background: #ffffff;
+    position: relative;
+}
+.divider .right_arrow,
+.divider .left_arrow{
+    height: 50px;
+    width: 50px;
+    background: #ffffff;
+    position: absolute;
+    z-index: 99999;
 }
 
 
