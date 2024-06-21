@@ -865,13 +865,26 @@
     background: #ffffff;
     position: relative;
 }
-.divider .right_arrow,
-.divider .left_arrow{
-    height: 50px;
-    width: 50px;
+
+.divider .bg-circle{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    left: -18px;
+    top:7rem;
     background: #ffffff;
     position: absolute;
     z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider .bg-circle i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4px;
 }
 
 
