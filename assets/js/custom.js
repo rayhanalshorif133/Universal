@@ -273,7 +273,6 @@ const commercialCleaningHandle = () => {
             topBar > 2513 ? topBar -= 2513 : topBar = 0;
             SETGREEN_LINE_POSITION = 490;
         }
-        console.log("SETGREEN_LINE_POSITION",SETGREEN_LINE_POSITION)
 
         if (topBar > 0) {
             if (topBar > GET_Side_Line) {
