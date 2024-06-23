@@ -74,6 +74,11 @@ const navBarToggler = () => {
 
     $(document).on('click', '.main-menu__toggle-menu', function (e) {
         $(".mobile-nav__wrapper").toggleClass("expanded");
+    }); 
+    
+    $(document).on('click', '.dropdown .dropdown-nav', function (e) {
+       $(this).next().toggleClass("expanded");
+       $(this).find('i').toggleClass("fa-caret-up").toggleClass("fa-caret-down");
     });
 
 };
