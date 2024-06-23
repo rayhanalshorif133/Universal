@@ -256,7 +256,6 @@ const commercialCleaningHandle = () => {
 
         var topBar = $(this).scrollTop(); // Get the current scroll position
 
-        // 320px 480px
         console.log(current_width)
 
         var SETGREEN_LINE_POSITION = 0;
@@ -271,10 +270,10 @@ const commercialCleaningHandle = () => {
             topBar > 2400 ? topBar -= 2400 : topBar = 0;
             SETGREEN_LINE_POSITION = 250;
         } else if (current_width > 1024) {
-            console.log(topBar, "topBar")
             topBar > 2513 ? topBar -= 2513 : topBar = 0;
-            SETGREEN_LINE_POSITION = 190;
+            SETGREEN_LINE_POSITION = 490;
         }
+        console.log("SETGREEN_LINE_POSITION",SETGREEN_LINE_POSITION)
 
         if (topBar > 0) {
             if (topBar > GET_Side_Line) {
