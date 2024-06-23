@@ -72,8 +72,14 @@ const navBarToggler = () => {
 
 
 
+    
+
     $(document).on('click', '.main-menu__toggle-menu', function (e) {
-        $(".mobile-nav__wrapper").toggleClass("expanded");
+        $(".mobile-nav__wrapper").addClass("expanded");
+    }); 
+
+    $(document).on('click', '.mobile-nav__close', function (e) {
+        $(".mobile-nav__wrapper").removeClass("expanded");
     }); 
     
     $(document).on('click', '.dropdown .dropdown-nav', function (e) {
