@@ -52,7 +52,7 @@ body {
 
 
 a {
-  color: var(--fobex-base);
+  color: #ffffff;
 }
 
 a,
@@ -1160,7 +1160,6 @@ sm: 540px,
 
 .mobile-nav__content .main-menu__list>li>ul,
 .mobile-nav__content .main-menu__list>li>ul>li>ul {
-  display: none;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   margin-left: 0.5em;
 }
