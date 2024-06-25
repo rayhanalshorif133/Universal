@@ -2,25 +2,42 @@ $(document).ready(function () {
 
     handleOwlCarousel();
     commercialCleaningHandle();
-
     navBarToggler();
-
-    handleGellary();
     exclusiveFeaturesContentBbox();
     counterHandler();
-    trustOurExpertise();
+    common();
 
 
 
 
 });
 
-const trustOurExpertise = () => {
+
+const common = () => {
     $(".trust_our_expertise .item i").click(function(){
         $(this).toggleClass('fa-plus').toggleClass('fa-minus');
         $(this).parent().next().toggleClass('show');
     });
+
+    $(document).on('click','.team_tab', function (e) {
+        $("#team-tab-content div").each(function() {
+            $(this).removeClass('active').removeClass('show');
+        });
+        $(".team_tab button").each(function() {
+            $(this).removeClass('active');
+        });
+
+        $(this).find('button').toggleClass('active');
+        const GET_TARGET = $(this).find('button').data('bs-target');
+        $(GET_TARGET).addClass('show').addClass('active');
+    });
+
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+    })
 };
+
 
 const counterHandler = () => {
     var counters = $(".count");
@@ -55,14 +72,6 @@ const exclusiveFeaturesContentBbox = () => {
     $(document).on('click', '.exclusive-features .content-box .item', function () {
         $(this).toggleClass('active');
     });
-};
-
-
-const handleGellary = () => {
-    lightbox.option({
-        'resizeDuration': 200,
-        'wrapAround': true
-    })
 };
 
 
@@ -159,7 +168,54 @@ const handleOwlCarousel = () => {
     });
 
 
-    const teamSlider = $(".team-slider").owlCarousel({
+    $(".team-slider-btn").each(function (e) {
+        const target_id = '#' + $(this).data('slider-target_id');
+        const LEFT_BTN = $(this).data('slider-target_id') + '-left';
+        const RIGHT_BTN = $(this).data('slider-target_id') + '-right';
+        $(this).find('.team-left-btn').addClass(LEFT_BTN);
+        $(this).find('.team-right-btn').addClass(RIGHT_BTN);
+
+       const silder = $(target_id).owlCarousel({
+            "loop": true,
+            "autoplay": true,
+            "margin": 30,
+            "nav": false,
+            "dots": false,
+            "smartSpeed": 500,
+            "autoplayTimeout": 10000,
+            "responsive": {
+                "0": {
+                    "items": 1
+                },
+                "520": {
+                    "items": 1.5
+                },
+                "600": {
+                    "items": 2
+                },
+                "768": {
+                    "items": 2.3
+                },
+                "992": {
+                    "items": 3
+                },
+                "1200": {
+                    "items": 3.66
+                }
+            }
+        });
+
+        $(document).on('click', `.${LEFT_BTN}`, function () {
+            silder.trigger('prev.owl.carousel');
+        });
+    
+        $(document).on('click', `.${RIGHT_BTN}`, function () {
+            silder.trigger('next.owl.carousel');
+        });
+    });
+
+
+    const teamSlider = $(".team-slidersdad").owlCarousel({
         "loop": true,
         "autoplay": true,
         "margin": 30,
