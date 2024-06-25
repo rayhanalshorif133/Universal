@@ -948,6 +948,8 @@
 }
 
 
+
+
 /* media tag devices:start */
 /*  320px — 480px: Mobile devices */
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -1007,6 +1009,10 @@
 
     .team-two_container {
         flex-direction: column;
+    }
+
+    .about__team-two{
+        padding: 20px 0  90px!important;
     }
 
     .team-two {
@@ -1081,6 +1087,10 @@
 
     .side-line {
         left: -38px;
+    }
+
+    .team_tab button{
+        font-size: 12px;
     }
 
     .contract-cleaning-services {
@@ -1174,6 +1184,11 @@
 
 /* 481px — 768px: iPads, Tablets */
 @media screen and (min-width: 481px) and (max-width: 768px) {
+
+
+    .team_tab button{
+        font-size: 14px;
+    }
 
     .slider-btn-container .right-slider-btn,
     .slider-btn-container .left-slider-btn {
