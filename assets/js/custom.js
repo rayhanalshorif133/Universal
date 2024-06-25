@@ -2,25 +2,42 @@ $(document).ready(function () {
 
     handleOwlCarousel();
     commercialCleaningHandle();
-
     navBarToggler();
-
-    handleGellary();
     exclusiveFeaturesContentBbox();
     counterHandler();
-    trustOurExpertise();
+    common();
 
 
 
 
 });
 
-const trustOurExpertise = () => {
+
+const common = () => {
     $(".trust_our_expertise .item i").click(function(){
         $(this).toggleClass('fa-plus').toggleClass('fa-minus');
         $(this).parent().next().toggleClass('show');
     });
+
+    $(document).on('click','.team_tab', function (e) {
+        $("#team-tab-content div").each(function() {
+            $(this).removeClass('active').removeClass('show');
+        });
+        $(".team_tab button").each(function() {
+            $(this).removeClass('active');
+        });
+
+        $(this).find('button').toggleClass('active');
+        const GET_TARGET = $(this).find('button').data('bs-target');
+        $(GET_TARGET).addClass('show').addClass('active');
+    });
+
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+    })
 };
+
 
 const counterHandler = () => {
     var counters = $(".count");
@@ -55,14 +72,6 @@ const exclusiveFeaturesContentBbox = () => {
     $(document).on('click', '.exclusive-features .content-box .item', function () {
         $(this).toggleClass('active');
     });
-};
-
-
-const handleGellary = () => {
-    lightbox.option({
-        'resizeDuration': 200,
-        'wrapAround': true
-    })
 };
 
 

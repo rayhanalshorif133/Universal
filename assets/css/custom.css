@@ -97,6 +97,15 @@
 
 }
 
+.breadcrumb-link{
+    color: #15332A;
+    cursor: pointer;
+}
+.breadcrumb-link:hover{
+    color: #0150EE;
+}
+
+
 
 .services-btn-container {
     position: absolute;
@@ -924,6 +933,18 @@
 .dropdown .dropdown-nav i{
     margin: 5px 5px 0 0;
     color: #FFFFFF;
+}
+
+.team_tab{
+    transition: all 0.4 ease-in-out;
+}
+
+.team_tab button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 

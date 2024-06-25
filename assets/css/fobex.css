@@ -67,6 +67,8 @@ a:visited {
   opacity: 1;
 }
 
+
+
 :-ms-input-placeholder {
   color: inherit;
   opacity: 1;
@@ -8556,10 +8558,12 @@ sm: 540px,
 /*--------------------------------------------------------------
 # About Three
 --------------------------------------------------------------*/
+
+
 .about-three {
   position: relative;
   display: block;
-  padding: 120px 0 130px;
+  padding: 0 0 60px;
   z-index: 1;
 }
 
