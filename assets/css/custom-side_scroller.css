@@ -1,0 +1,58 @@
+.top-10 {
+    top: 3.5rem!important;
+}
+.relative {
+    position: relative;
+}
+
+.circle{
+    margin-top: 1rem !important;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle i{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: white;
+    z-index: 9999999;
+}
+
+.circle-bg-gray{
+    background-color: #EEEEEE;
+}
+
+.circle-bg-light{
+    background-color: #0BCBEF;
+}
+
+.circle-line{
+    background-color: #EEEEEE;
+    height: 0px;
+    width: 4px;
+    position: absolute;
+    top: 40px;
+    z-index: -10;
+    left: 21px;
+}
+
+.green-line{
+    height: 0px;
+    width: 4px;
+    top: 40px;
+    left: 21px;
+    position: absolute;
+    background-color: #0BCBEF;
+}
+
+
+.space-x-3 > * + * {
+    margin-left: 3rem;
+}
+
